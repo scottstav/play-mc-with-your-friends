@@ -1,0 +1,52 @@
+{
+  "name": "scotty.dance",
+  "version": "1.0.0",
+  "description": "vanity",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production webpack --config prod.config.js",
+    "start": "webpack-dev-server --open --config dev.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottstav/scotty.dance.git"
+  },
+  "author": "scottstav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottstav/scotty.dance/issues"
+  },
+  "homepage": "https://github.com/scottstav/scotty.dance#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.1.0",
+    "dotenv-webpack": "^1.7.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "prop-types": "^15.7.2",
+    "raw-loader": "^4.0.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.2",
+    "webpack-s3-plugin": "^1.0.3"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.553.0",
+    "bootstrap": "^4.4.1",
+    "flexview": "0.0.1",
+    "lodash": "^4.17.19",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0",
+    "react-dom": "^16.8.6",
+    "react-markdown": "^4.2.2",
+    "react-router-dom": "^5.0.1",
+    "react-sidebar": "^3.0.2"
+  }
+}
