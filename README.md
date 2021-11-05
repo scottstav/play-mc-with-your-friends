@@ -8,3 +8,7 @@ deploy: `aws cloudformation deploy --template-file ./ec2-instance.yml --stack-na
 get the dns of the deployed stack: `aws cloudformation describe-stacks --stack-name minecraft-server --query "Stacks[0].Outputs[0].OutputValue" --output text`
 
 or ssh to you instance: `ssh -v -i ~/.ssh/minecraft-server-key ubuntu@$(aws cloudformation describe-stacks --stack-name minecraft-server --query "Stacks[0].Outputs[0].OutputValue" --output text)`
+
+
+btw:
+https://gaming.stackexchange.com/questions/123194/is-there-a-way-to-get-the-latest-server-jar-through-a-url-that-doesnt-change
